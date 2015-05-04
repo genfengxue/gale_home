@@ -18,7 +18,7 @@ address,caption,cite,code,dfn,em,strong,th,var {
   font-weight: normal;
   font-style: normal;
 }
-strong{
+strong {
   font-weight: bold;
 }
 ol,ul {
@@ -45,58 +45,68 @@ abbr,acronym { border: 0;
 
 /* Custom CSS
  * --------------------------------------- */
-body{
+body {
   font-family: arial,helvetica;
   color: #F2F2F2;
 }
-h1{
-  font-size: 6em;
-}
-p{
-  font-size: 2em;
-}
-.content{
+.content {
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   text-align: center;
 }
+.text-overlay {
+  &:before {
+    content: ' ';
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.42);
+  }
+}
+.section {
+  h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 4em;
+    color: #FFF;
+  }
+  p {
+    color: #FFF;
+    opacity: 0.9;
+    font-size: .85em;
+    line-height: 1.8em;
+  }
+}
 
-/* Section 1
+/* Section
  * --------------------------------------- */
-#section0{
-  background-color: #BFDA00;
-}
-#section0 h1{
-  color: #444;
-}
-#section0 p{
-  color: #333;
-  opacity: 0.4;
-}
-
-
-/* Section 2
- * --------------------------------------- */
-#section1{
-  background-color: #2EBE21;
-}
-#section1 h1{
-  color: #fff;
-}
-#section1 p{
-  opacity: 0.8;
-}
-
-
-/* Section 3
- * --------------------------------------- */
-#section2{
+#section0 {
+  @extend .text-overlay;
   background-color: #2C3E50;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-#section2 h1{
-  color: #F2F2F2;
+
+#section1 {
+  background-color: #EDEDED;
+  h1, p {
+    color: rgb(64, 68, 68);
+  }
 }
-#section2 p{
-  opacity: 0.6;
+
+#section2 {
+  background-color: #EDEDED;
+  h1, p {
+    color: rgb(64, 68, 68);
+  }
+}
+
+#section3 {
+  background-color: #EDEDED;
+  h1, p {
+    color: rgb(64, 68, 68);
+  }
 }

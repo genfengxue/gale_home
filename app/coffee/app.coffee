@@ -1,5 +1,5 @@
 $(document).ready ->
   $('#fullpage').fullpage
-    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage']
+    anchors: ['home', 'page1', 'page2', 'about']
     menu: '#menu'
     css3: true
