@@ -1,0 +1,7 @@
+{
+  "name": "gale_home",
+  "version": "0.0.1",
+  "dependencies": {
+    "fullpage.js": "~2.6.5"
+  }
+}

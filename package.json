@@ -1,0 +1,24 @@
+{
+  "name": "gale_home",
+  "version": "0.0.1",
+  "description": "www.genfengxue.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genfengxue/gale_home.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/genfengxue/gale_home/issues"
+  },
+  "homepage": "https://github.com/genfengxue/gale_home#readme",
+  "devDependencies": {
+    "browser-sync": "^2.6.11",
+    "gulp": "^3.5.6",
+    "gulp-coffee": "^2.1.1",
+    "gulp-concat": "^2.2.0",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.1",
+    "main-bower-files": "^2.1.0"
+  }
+}
